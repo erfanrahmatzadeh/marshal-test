@@ -9,14 +9,13 @@ namespace marshal_test
             int num = 1;
             int[] price = new int[] { 30845,756,1,02,128,358,018,37,0027,00046 };
             string[] name = new string[] { "Bitcoin", "Ethereum", "tether", "XRP", "Litecoin", "Bitcoin cash", "cardano", "BNB", "Tron", "Dogecoin" };
-              
-            for(int i = 0; i < name.Length; i++)
-            {
-                
-                    Console.WriteLine(num + " _ " + name[i]+ " = " + price[0] + " $");
-                num++;
-                price[0]++;
 
+            for (int i = 0; i < name.Length; i++)
+            {
+
+                Console.WriteLine(num + " _ " + name[i] + " = " + price[i] + " $");
+                num++;
+             
 
             }
             Console.WriteLine("enter a coin name you want. ");
@@ -261,6 +260,7 @@ namespace marshal_test
                     Console.WriteLine("error");
                     break;
             }
+            Console.ReadKey();
         }
     }
 }
